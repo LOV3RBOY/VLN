@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE NOTE - A visual display of beautiful moments .</title>
+    <meta name="description"
+        content="In 2015, my wife Sarah and I embarked on a road trip across the western U.S., capturing 100 Instax frames of love, discovery, and resilience. These moments remain a testament to the bond we built on the open road." />
+
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Untamed Gallery" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="stylesheet" href="assets/styles.css">
+
+<body>
+    <nav class="navbar heading-padding">
+        <button class="title custom-font" id="navbar-title" type="button">LOVE NOTE</button>
+        <div class="navbar-links">
+            <button class="button" type="button" id="full-story-btn">About</button>
+            <a href="">
+                <img src="/assets/images/instagram.svg" alt="Instagram icon" class="instagram-icon">
+            </a>
+        </div>
+    </nav>
+    <h1 class="untamed-title custom-font">
+        LOVE NOTE
+        <div id="scroll-text-container" class="wide-kerning">
+            <p class=" scroll-text">Scroll to Explore</p>
+            <p class="scroll-text">Scroll to Explore</p>
+        </div>
+    </h1>
+    <div class="slide-1 slightly-less-wide-kerning">
+        <p>
+           This isn’t just a collection of videos. It’s a visual anthology of passion, connection, and moments that mattered.
+				   A showcase of memories—raw, unfiltered, and real. Each video is a love note, a frame frozen in time, 
+					 capturing the electricity of intimacy and the beauty of shared experiences.
+        </p>
+        <p>
+            This isn’t about shock value or reckless exposure; it’s about storytelling. The kind of storytelling that doesn’t sanitize, doesn’t filter, doesn’t ask for permission. It’s about honesty—the kind that makes people feel something. Love, lust, nostalgia, curiosity. Every frame is a moment that once burned bright, a chapter of a past connection, immortalized not as something to be hidden, but as something to be acknowledged.
+        </p>
+    </div>
+    <div class="modal-overlay">
+        <div class="modal-header heading-padding">
+            <div class="title custom-font" id="modal-title">LOVE NOTE</div>
+            <button class="close button white-button" id="close-modal-button" type="button">BACK</button>
+        </div>
+        <div class="history-section">
+            <div class="flavor-text slow-fade-in">A visual display of beautiful moments.</div>
+            <div class="history-content slightly-less-less-wide-kerning">
+                <p class="slow-fade-in">
+                    This isn’t just a collection of videos. It’s a visual anthology of passion, connection, and moments that mattered. A showcase of memories—raw, unfiltered, and real. Each video is a love note, a frame frozen in time, capturing the electricity of intimacy and the beauty of shared experiences.
+                </p>
+                <p class="slow-fade-in">
+                    This isn’t about shock value or reckless exposure; it’s about storytelling. The kind of storytelling that doesn’t sanitize, doesn’t filter, doesn’t ask for permission. It’s about honesty—the kind that makes people feel something. Love, lust, nostalgia, curiosity. Every frame is a moment that once burned bright, a chapter of a past connection, immortalized not as something to be hidden, but as something to be acknowledged.
+                </p>
+                <p class="slow-fade-in">
+                    There’s no shame in desire. No disgrace in intimacy. This is about the art of human connection—the way two bodies move in sync, the way eyes lock, the way a touch lingers. It’s not just about sex. It’s about chemistry. It’s about energy. It’s about the kind of moments that, even when they pass, still leave an imprint.
+                </p>
+                <p class="slow-fade-in">
+                    This is passion, unedited. Memories, unapologetic. And a showcase that stands as a testament to the beauty of embracing it all.
+                </p>
+            </div>
+        </div>
+        <div class="cta-section">
+            <div class="cta-text slow-fade-in">Explore the Experience</div>
+            <img class="cta-image cta-image-3" src="/assets/images/optimized/Untamed_003.jpg" alt="Placeholder 3">
+            <img class="cta-image cta-image-2" src="/assets/images/optimized/Untamed_002.jpg" alt="Placeholder 2">
+            <img class="cta-image cta-image-1" src="/assets/images/optimized/Untamed_001.jpg" alt="Placeholder 1">
+        </div>
+    </div>
+    <canvas id="threejs-canvas"></canvas>
+    <div id="controls-overlay" class="heading-padding">
+        <button class="button" id="controls-toggle" type="button">controls</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.1/three.min.js" async></script>
+    <script src="assets/scripts.js" async></script>
+
+    <!-- Music player -->
+    <audio id="background-music" loop>
+        <source src="/assets/sounds/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="music-controls" class="heading-padding">
+        <span id="music-credits">Sweet Dispozition - Feeling Blew</span>
+        <button id="music-toggle" class="button">
+            <img id="music-icon" src="/assets/images/speaker.svg" alt="Music control" width="24px" height="24px">
+        </button>
+    </div>
+</body>
